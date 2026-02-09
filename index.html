@@ -1,1 +1,787 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Premium Property Management | PMI Sunny OC - Orange County's Elite Asset Stewards</title>
+<meta name="description" content="Orange County's premier property management firm for sophisticated investors. Technology-driven management delivering 6-8% net returns with complete transparency, proactive maintenance, and California compliance expertise for $800K-$2.5M properties.">
+<meta property="og:title" content="Premium Property Management for Sophisticated Orange County Investors" />
+<meta property="og:description" content="Transform your Orange County investment properties into consistently profitable, hands-off income streams. Technology-enabled management with complete transparency and asset protection." />
+<meta property="og:image" content="https://res.cloudinary.com/dv94te4zt/image/upload/v1770322732/ma3quhu6u9golti64ilf.png" />
+<meta property="og:url" content="https://www.pmisunnyoc.com" />
+<meta name="theme-color" content="#1e3a8a" />
+<link rel="icon" href="https://fav.farm/🏡" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+<style>
+:root {
+--navy: #1e3a8a;
+--gold: #d97706;
+--cream: #fef3c7;
+--light: #f8fafc;
+--dark: #0f172a;
+--gray: #64748b;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+background-color: var(--light);
+color: var(--dark);
+line-height: 1.6;
+font-size: 16px;
+overflow-x: hidden;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+header, nav, main, footer, section {
+width: 100%;
+}
+.global-header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 2;
+padding: 1.5rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(15, 23, 42, 0.85);
+backdrop-filter: blur(10px);
+}
+.global-header img.logo {
+width: 220px;
+filter: brightness(0) invert(1);
+}
+.hero {
+position: relative;
+height: 100vh;
+overflow: hidden;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background: linear-gradient(135deg, var(--navy) 0%, #334155 100%);
+}
+.hero video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 0;
+opacity: 0.3;
+}
+.hero-overlay {
+position: relative;
+background: rgba(15, 23, 42, 0.9);
+padding: 4rem 2rem;
+max-width: 1100px;
+z-index: 1;
+margin: 0 1rem;
+border-radius: 16px;
+border: 1px solid rgba(217, 119, 6, 0.3);
+}
+.hero-overlay h1 {
+font-family: 'Playfair Display', serif;
+font-size: 3.75rem;
+font-weight: 700;
+margin-bottom: 1.25rem;
+line-height: 1.1;
+}
+.hero-overlay .tagline {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 1rem;
+color: var(--gold);
+}
+.hero-overlay p {
+font-size: 1.25rem;
+font-weight: 400;
+margin-bottom: 2.5rem;
+color: #e2e8f0;
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+.hero-stats {
+display: flex;
+justify-content: center;
+gap: 4rem;
+margin-bottom: 2.5rem;
+flex-wrap: wrap;
+}
+.hero-stat {
+text-align: center;
+}
+.hero-stat-number {
+font-family: 'Playfair Display', serif;
+font-size: 3rem;
+font-weight: 700;
+color: var(--gold);
+display: block;
+}
+.hero-stat-label {
+font-size: 0.95rem;
+color: #cbd5e1;
+margin-top: 0.25rem;
+}
+.trust-badges {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-top: 2rem;
+flex-wrap: wrap;
+font-size: 0.9rem;
+color: #94a3b8;
+}
+.trust-badge {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+.trust-badge:before {
+content: "✓";
+color: var(--gold);
+font-weight: bold;
+font-size: 1.2rem;
+}
+.cta-button {
+background-color: var(--gold);
+color: #fff;
+border: none;
+padding: 1rem 2.5rem;
+font-size: 1.125rem;
+font-weight: 600;
+border-radius: 6px;
+cursor: pointer;
+transition: all 0.3s ease;
+display: inline-block;
+box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+.cta-button:hover {
+background-color: #b45309;
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+}
+.section {
+padding: 5rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+.section-alt {
+background: white;
+}
+.section h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.75rem;
+margin-bottom: 1rem;
+color: var(--navy);
+text-align: center;
+}
+.section .subtitle {
+font-size: 1.25rem;
+color: var(--gray);
+text-align: center;
+margin-bottom: 3rem;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+.section p {
+font-size: 1.125rem;
+color: #334155;
+margin-bottom: 1.5rem;
+}
+.section ul {
+list-style: none;
+color: #334155;
+margin-top: 1.5rem;
+margin-bottom: 2rem;
+}
+.section ul li {
+padding-left: 2rem;
+position: relative;
+margin-bottom: 1rem;
+font-size: 1.0625rem;
+}
+.section ul li:before {
+content: "✓";
+position: absolute;
+left: 0;
+color: var(--gold);
+font-weight: bold;
+font-size: 1.25rem;
+}
+.section strong {
+color: var(--navy);
+font-weight: 600;
+}
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 2rem;
+margin-top: 3rem;
+}
+.feature-box {
+background: #fff;
+border: 1px solid #e2e8f0;
+padding: 2.5rem;
+border-radius: 12px;
+box-shadow: 0 4px 6px rgba(30, 58, 138, 0.05);
+transition: all 0.3s ease;
+}
+.feature-box:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 24px rgba(30, 58, 138, 0.12);
+border-color: var(--gold);
+}
+.feature-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+display: block;
+}
+.feature-box h3 {
+color: var(--navy);
+margin-bottom: 1rem;
+font-size: 1.375rem;
+font-weight: 700;
+}
+.feature-box p {
+color: var(--gray);
+font-size: 1rem;
+line-height: 1.7;
+}
+.pain-points {
+background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+padding: 4rem 2rem;
+margin: 3rem 0;
+border-radius: 12px;
+border-left: 6px solid var(--gold);
+}
+.pain-points h3 {
+font-family: 'Playfair Display', serif;
+color: var(--navy);
+margin-bottom: 2rem;
+font-size: 2rem;
+text-align: center;
+}
+.pain-points-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+max-width: 1000px;
+margin: 0 auto;
+}
+.pain-point {
+background: white;
+padding: 1.5rem;
+border-radius: 8px;
+border-left: 3px solid var(--gold);
+}
+.pain-point strong {
+color: var(--navy);
+display: block;
+margin-bottom: 0.5rem;
+font-size: 1.0625rem;
+}
+.value-props {
+background: var(--navy);
+color: white;
+padding: 5rem 2rem;
+}
+.value-props h2 {
+color: white;
+}
+.value-props .subtitle {
+color: #cbd5e1;
+}
+.value-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+margin-top: 3rem;
+}
+.value-card {
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(217, 119, 6, 0.3);
+padding: 2rem;
+border-radius: 12px;
+backdrop-filter: blur(10px);
+}
+.value-card h3 {
+color: var(--gold);
+font-size: 1.375rem;
+margin-bottom: 1rem;
+}
+.value-card p {
+color: #cbd5e1;
+}
+.testimonials {
+background: white;
+padding: 5rem 2rem;
+}
+.testimonials h2 {
+color: var(--navy);
+margin-bottom: 3rem;
+}
+.testimonial {
+max-width: 900px;
+margin: 0 auto 3rem auto;
+background: var(--light);
+padding: 2.5rem;
+border-radius: 12px;
+border-left: 4px solid var(--gold);
+position: relative;
+}
+.testimonial:before {
+content: """;
+position: absolute;
+top: -10px;
+left: 20px;
+font-size: 4rem;
+color: var(--gold);
+opacity: 0.3;
+font-family: 'Playfair Display', serif;
+}
+.testimonial p {
+font-style: italic;
+font-size: 1.125rem;
+color: var(--dark);
+margin-bottom: 1rem;
+}
+.testimonial cite {
+display: block;
+margin-top: 1rem;
+font-style: normal;
+font-weight: 700;
+color: var(--navy);
+}
+.testimonial cite span {
+display: block;
+font-weight: 400;
+color: var(--gray);
+font-size: 0.95rem;
+margin-top: 0.25rem;
+}
+.process {
+background: var(--light);
+padding: 5rem 2rem;
+}
+.process-steps {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin-top: 3rem;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+}
+.process-step {
+text-align: center;
+position: relative;
+}
+.step-number {
+width: 60px;
+height: 60px;
+background: var(--gold);
+color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+font-weight: 700;
+margin: 0 auto 1rem auto;
+}
+.process-step h3 {
+color: var(--navy);
+margin-bottom: 0.75rem;
+font-size: 1.25rem;
+}
+.process-step p {
+color: var(--gray);
+font-size: 0.95rem;
+}
+.cta-section {
+background: linear-gradient(135deg, var(--gold) 0%, #b45309 100%);
+color: #fff;
+text-align: center;
+padding: 5rem 2rem;
+}
+.cta-section h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.75rem;
+margin-bottom: 1rem;
+color: white;
+}
+.cta-section p {
+font-size: 1.25rem;
+margin-bottom: 2.5rem;
+color: #fef3c7;
+}
+.cta-section form {
+max-width: 600px;
+margin: 2rem auto 0 auto;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+background: rgba(255, 255, 255, 0.1);
+padding: 2.5rem;
+border-radius: 12px;
+backdrop-filter: blur(10px);
+}
+.cta-section input,
+.cta-section textarea,
+.cta-section select {
+padding: 1rem 1.25rem;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 6px;
+font-size: 1rem;
+background: rgba(255, 255, 255, 0.95);
+color: var(--dark);
+}
+.cta-section input::placeholder,
+.cta-section textarea::placeholder {
+color: var(--gray);
+}
+.cta-section button {
+padding: 1rem 2rem;
+background-color: var(--navy);
+color: #fff;
+border: none;
+border-radius: 6px;
+font-size: 1.125rem;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.cta-section button:hover {
+background-color: #1e40af;
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(15, 23, 42, 0.4);
+}
+.warranty-badge {
+background: var(--navy);
+color: white;
+padding: 1.5rem 3rem;
+border-radius: 8px;
+display: inline-block;
+margin: 2rem 0;
+font-weight: 600;
+border: 2px solid var(--gold);
+}
+.logo-footer {
+width: 200px;
+margin-bottom: 1.5rem;
+}
+footer {
+padding: 3rem 2rem 2rem 2rem;
+background: var(--dark);
+color: #94a3b8;
+text-align: center;
+font-size: 0.875rem;
+}
+footer a {
+color: var(--gold);
+transition: color 0.3s ease;
+}
+footer a:hover {
+color: #fbbf24;
+}
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-top: 1.5rem;
+flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+.hero-overlay h1 {
+font-size: 2.5rem;
+}
+.hero-overlay .tagline {
+font-size: 1.25rem;
+}
+.hero-stats {
+gap: 2rem;
+}
+.hero-stat-number {
+font-size: 2.25rem;
+}
+.global-header {
+padding: 1rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+}
+.global-header img.logo {
+width: 160px;
+}
+.cta-section form {
+padding: 1.5rem;
+}
+.section h2 {
+font-size: 2.25rem;
+}
+.section {
+padding: 3rem 1.5rem;
+}
+.features,
+.value-grid,
+.process-steps {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<header class="global-header">
+<img src="https://res.cloudinary.com/dv94te4zt/image/upload/v1770322732/ma3quhu6u9golti64ilf.png" alt="PMI Sunny OC Logo" class="logo" />
+</header>
+
+<section class="hero">
+<video autoplay muted loop playsinline>
+<source src="https://cdn.pixabay.com/video/2020/06/15/42332-433102142_large.mp4" type="video/mp4">
+</video>
+<div class="hero-overlay">
+<div class="tagline">Orange County's Premier Property Management</div>
+<h1>Maximize Returns.<br/>Minimize Hassle.</h1>
+<p>Transform your Orange County investment properties into consistently profitable, hands-off income streams with technology-driven management backed by proven systems and deep local expertise.</p>
+<div class="hero-stats">
+<div class="hero-stat">
+<span class="hero-stat-number">6-8%</span>
+<span class="hero-stat-label">Net Returns</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-number">24/7</span>
+<span class="hero-stat-label">Maintenance Response</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-number">95%+</span>
+<span class="hero-stat-label">Tenant Retention</span>
+</div>
+</div>
+<div class="trust-badges">
+<div class="trust-badge">PMI Franchise Backed</div>
+<div class="trust-badge">California Compliance Experts</div>
+<div class="trust-badge">Real-Time Owner Portals</div>
+</div>
+<a href="#contact" class="cta-button">Schedule Your Consultation</a>
+</div>
+</section>
+
+<section class="section">
+<h2>Built for Sophisticated Orange County Investors</h2>
+<p class="subtitle">Whether you're managing properties from across state lines or protecting your local portfolio, we deliver the transparency, performance analytics, and asset protection that discerning investors demand.</p>
+<div class="features">
+<div class="feature-box">
+<span class="feature-icon">🎯</span>
+<h3>Strategic Market Positioning</h3>
+<p>Deep expertise across Irvine, Newport Beach, Costa Mesa, Tustin, and Huntington Beach ensures optimal rental pricing and maximum returns in Orange County's $100B+ market.</p>
+</div>
+<div class="feature-box">
+<span class="feature-icon">🛡️</span>
+<h3>California Compliance Mastery</h3>
+<p>Navigate complex tenant protection laws, HOA regulations, and local ordinances with confidence. We protect your substantial equity from regulatory risks.</p>
+</div>
+<div class="feature-box">
+<span class="feature-icon">📊</span>
+<h3>Technology-Enabled Transparency</h3>
+<p>Real-time owner portals provide detailed performance analytics, monthly financial reporting, and complete visibility into your investment—anytime, anywhere.</p>
+</div>
+<div class="feature-box">
+<span class="feature-icon">🔍</span>
+<h3>Rigorous Tenant Screening</h3>
+<p>Advanced background verification systems ensure premium tenant placement, protecting your property values and minimizing vacancy periods in competitive rental markets.</p>
+</div>
+<div class="feature-box">
+<span class="feature-icon">🔧</span>
+<h3>Proactive Maintenance Management</h3>
+<p>Vetted contractor networks and preventive maintenance programs preserve long-term asset value while minimizing unexpected repair costs.</p>
+</div>
+<div class="feature-box">
+<span class="feature-icon">⚖️</span>
+<h3>Eviction Protection & Legal Support</h3>
+<p>Comprehensive legal compliance management and eviction protection services safeguard your investments throughout the tenant lifecycle.</p>
+</div>
+</div>
+</section>
+
+<div class="pain-points">
+<h3>We Solve the Problems That Keep Investors Up at Night</h3>
+<div class="pain-points-grid">
+<div class="pain-point">
+<strong>Out-of-State Management Challenges</strong>
+Managing premium properties across time zones without reliable local representation and real-time visibility.
+</div>
+<div class="pain-point">
+<strong>California's Regulatory Maze</strong>
+Navigating constantly evolving tenant protection laws, HOA requirements, and compliance obligations that threaten your investment.
+</div>
+<div class="pain-point">
+<strong>Costly Vacancy Periods</strong>
+Finding qualified tenants quickly in competitive Orange County markets while maintaining premium rental rates.
+</div>
+<div class="pain-point">
+<strong>Unreliable Contractors</strong>
+Securing trustworthy, fairly-priced maintenance services in one of California's most expensive service markets.
+</div>
+<div class="pain-point">
+<strong>Time Drain on High-Value Professionals</strong>
+Successful executives and business owners lacking bandwidth for hands-on property management details.
+</div>
+<div class="pain-point">
+<strong>Asset Value Preservation</strong>
+Protecting substantial equity in $800K-$2.5M properties through professional stewardship and strategic oversight.
+</div>
+</div>
+</div>
+
+<section class="value-props">
+<h2>The PMI Sunny OC Advantage</h2>
+<p class="subtitle">Backed by the nationally proven PMI franchise system and deep Orange County expertise</p>
+<div class="value-grid">
+<div class="value-card">
+<h3>Complete Peace of Mind</h3>
+<p>Transform your investment properties into truly passive income. Our comprehensive management means you never field 3 AM maintenance calls or chase late rent payments again.</p>
+</div>
+<div class="value-card">
+<h3>Optimized Cash Flow</h3>
+<p>Strategic rental pricing, reduced vacancy periods, and efficient maintenance management deliver consistent 6-8% net returns while protecting your asset appreciation.</p>
+</div>
+<div class="value-card">
+<h3>Risk Mitigation</h3>
+<p>Expert navigation of California's tenant laws, comprehensive insurance requirements, and proactive legal compliance protect you from costly regulatory violations.</p>
+</div>
+<div class="value-card">
+<h3>Time Freedom</h3>
+<p>Reclaim your valuable time. Focus on your career, business, or family while we handle every aspect of property management with military precision.</p>
+</div>
+<div class="value-card">
+<h3>Data-Driven Decisions</h3>
+<p>Monthly performance analytics and market insights empower informed investment decisions as you build generational wealth through your real estate portfolio.</p>
+</div>
+<div class="value-card">
+<h3>Scalable Systems</h3>
+<p>Whether managing 2 properties or 10, our technology-enabled platform grows with your portfolio without compromising service quality or oversight.</p>
+</div>
+</div>
+</section>
+
+<section class="section section-alt process">
+<h2>Your Path to Hands-Off Property Management</h2>
+<p class="subtitle">Professional onboarding designed for busy investors</p>
+<div class="process-steps">
+<div class="process-step">
+<div class="step-number">1</div>
+<h3>Consultation</h3>
+<p>We analyze your portfolio, investment goals, and current challenges in a complimentary strategy session.</p>
+</div>
+<div class="process-step">
+<div class="step-number">2</div>
+<h3>Customized Proposal</h3>
+<p>Receive a detailed management plan with transparent pricing, expected returns, and performance benchmarks.</p>
+</div>
+<div class="process-step">
+<div class="step-number">3</div>
+<h3>Seamless Transition</h3>
+<p>We handle tenant communications, vendor transfers, and system setup—typically completed within 14 days.</p>
+</div>
+<div class="process-step">
+<div class="step-number">4</div>
+<h3>Ongoing Optimization</h3>
+<p>Monthly reporting, proactive maintenance, and continuous market analysis ensure peak performance.</p>
+</div>
+</div>
+</section>
+
+<section class="testimonials">
+<h2>Trusted by Orange County's Savvy Investors</h2>
+<div class="testimonial">
+<p>"After trying to manage our Newport Beach and Irvine properties from Arizona, PMI Sunny OC was exactly what we needed. The real-time portal gives us complete visibility, and their proactive maintenance approach has actually increased our property values. We're seeing consistent 7% net returns without any of the previous headaches."</p>
+<cite>Robert & Linda M.<span>Multi-Property Investors, Scottsdale, AZ</span></cite>
+</div>
+<div class="testimonial">
+<p>"As a physician with limited time, I needed true hands-off management for my Costa Mesa rental portfolio. PMI Sunny OC's technology platform and professional approach have been game-changing. They handle everything from tenant screening to HOA compliance, and their monthly analytics help me make informed decisions about expanding my investments."</p>
+<cite>Dr. James Chen<span>Physician & Real Estate Investor, Orange County</span></cite>
+</div>
+<div class="testimonial">
+<p>"The level of transparency and professionalism is exactly what sophisticated investors expect. PMI Sunny OC's deep knowledge of California tenant law saved us from a potentially costly compliance issue, and their vetted contractor network consistently delivers quality work at fair prices. They treat our properties like the substantial assets they are."</p>
+<cite>Patricia Sanderson<span>Family Office Manager, 8-Property Portfolio</span></cite>
+</div>
+</section>
+
+<section class="section section-alt">
+<h2>Specialized Services for Premium Properties</h2>
+<p class="subtitle">Comprehensive solutions for $800K-$2.5M Orange County investments</p>
+<ul>
+<li><strong>Strategic Rental Analysis:</strong> Market-driven pricing optimization ensuring maximum returns while minimizing vacancy in premium submarkets</li>
+<li><strong>Premium Tenant Placement:</strong> Advanced screening protocols attracting quality, long-term tenants who value and maintain luxury properties</li>
+<li><strong>24/7 Maintenance Coordination:</strong> Immediate response systems with pre-vetted, insured contractors specializing in high-value properties</li>
+<li><strong>Financial Performance Tracking:</strong> Detailed monthly reporting with YoY comparisons, tax-ready documentation, and performance benchmarking</li>
+<li><strong>Regulatory Compliance Management:</strong> Expert navigation of California's complex tenant laws, local ordinances, and HOA requirements</li>
+<li><strong>Property Preservation Programs:</strong> Regular inspections, preventive maintenance scheduling, and long-term capital improvement planning</li>
+<li><strong>Investor Relations:</strong> Dedicated account management with quarterly strategy reviews and market insight briefings</li>
+<li><strong>Technology Platform Access:</strong> Real-time dashboards, document libraries, maintenance tracking, and mobile app convenience</li>
+</ul>
+<div style="text-align: center; margin-top: 2rem;">
+<div class="warranty-badge">Backed by PMI's National Franchise System & Local Expertise</div>
+</div>
+</section>
+
+<section class="cta-section" id="contact">
+<h2>Ready to Transform Your Investment Experience?</h2>
+<p>Schedule your complimentary portfolio analysis and discover how professional management can optimize your Orange County properties.</p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input type="text" name="name" placeholder="Full Name" required />
+<input type="email" name="email" placeholder="Email Address" required />
+<input type="tel" name="phone" placeholder="Phone Number" required />
+<select name="property_count" required>
+<option value="">Number of Properties</option>
+<option value="1">1 Property</option>
+<option value="2-3">2-3 Properties</option>
+<option value="4-6">4-6 Properties</option>
+<option value="7-10">7-10 Properties</option>
+<option value="10+">10+ Properties</option>
+</select>
+<select name="location" required>
+<option value="">Primary Property Location</option>
+<option value="irvine">Irvine</option>
+<option value="newport">Newport Beach</option>
+<option value="costa-mesa">Costa Mesa</option>
+<option value="tustin">Tustin</option>
+<option value="huntington">Huntington Beach</option>
+<option value="other">Other Orange County</option>
+</select>
+<textarea name="message" rows="4" placeholder="Tell us about your current property management challenges or goals..." required></textarea>
+<button type="submit" class="cta-button">Request Consultation</button>
+</form>
+</section>
+
+<footer>
+<img src="https://res.cloudinary.com/dv94te4zt/image/upload/v1770322732/ma3quhu6u9golti64ilf.png" alt="PMI Sunny OC" class="logo-footer" style="filter: brightness(0) invert(1);" />
+<p>&copy; 2026 PMI Sunny OC. All rights reserved.<br/>Professional Property Management for Orange County's Discerning Investors</p>
+<div class="footer-links">
+<a href="tel:949-555-0100">949-555-0100</a> | 
+<a href="mailto:info@pmisunnyoc.com">info@pmisunnyoc.com</a> | 
+<a href="#privacy">Privacy Policy</a> | 
+<a href="#terms">Terms of Service</a>
+</div>
+<p style="margin-top: 1.5rem; font-size: 0.8rem;">Each franchise office is independently owned and operated. PMI franchise offices are licensed to use the PMI logo and service marks.</p>
+</footer>
+
+</body>
+</html>
